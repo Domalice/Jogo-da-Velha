@@ -20,6 +20,6 @@ A estrutura do HTML foi criada pensando no flex-box do CSS — wrap para fazer a
 * Placar contagem de pontos.
 * Limpar a tela automaticamente e começar um novo jogo.
 * Mensagens:
-    Jogador um venceu!
-    Jogador dois venceu!
-    Deu velha! (Empate)
+1. _Jogador um venceu!_
+2. _Jogador dois venceu!_
+3. _Deu velha! (Empate)_
