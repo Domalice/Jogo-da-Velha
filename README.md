@@ -18,7 +18,7 @@ A estrutura do HTML foi criada pensando no flex-box do CSS — wrap para fazer a
 * 2 jogadores.
 * Contra I.A.
 * Placar contagem de pontos.
-* Limpar a tela automaticamente e começar um novo jogo.
+* Limpar a tela automaticamente e começar um novo jogo.  
 Mensagens:
 1. _Jogador um venceu!_
 2. _Jogador dois venceu!_
