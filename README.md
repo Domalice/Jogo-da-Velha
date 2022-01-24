@@ -1,4 +1,6 @@
-# Jogo-da-Velha
+# https://domalice.github.io/Jogo-da-Velha/
+
+## Jogo da Velha
 Colocando a lógica em prática, e utilizando bastante munipulação de DOM.
 
 ## Linguagens utilizadas:
