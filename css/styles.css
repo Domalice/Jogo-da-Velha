@@ -1,0 +1,122 @@
+body {
+    text-align: center; /* colocando o texto no centro */
+    font-family: Helvetica, sans-serif; /*Escolhendo uma fonte sem serifa, e colocando uma fonte de call back para caso não tenha a fonte helvetica no navegador do usuário*/
+}
+
+h1 {
+    font-size: 42px; /*aumentando a fonte do título principal, o nome do jogo*/
+}
+
+/* botões */
+
+#buttons-container button { /*selecionando o id do botão, entrando no botão*/
+    border: none; /*tirando a borda*/
+    padding: 10px 15px; /*colocando espaçamento cima-baixo, e esquerda-direita.*/
+    margin: 0 10px; /*colocando uma margem 0 cima-baixo, e 10 esquerda-direita.*/
+}
+
+/* jogo */
+
+#container {
+    display: flex; /*flex-box*/
+    width: 300px; /*definindo a largura, para fazer o encaixe de cada um com 100px de largura aproximadamente*/
+    margin: 0; /*tirando a margem*/
+    flex-direction: row; /*colocando a direção em linha, ao invés de coluna*/
+    flex-wrap: wrap; /*vai começar a jogar as barras para baixo, um para baixo do outro*/
+    position: relative; /*para centralizar temos que dizer que a posição é relativa*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box { /*cada caixinha do jogo da velha*/
+    height: 100px; /*altura*/
+    border: 5px solid #000; /* fazendo as barras do jogo da velha*/
+    box-sizing: border-box; /*impondo uma regra que essa div vai ter 100px de altura, e não 100px de altura + a borda*/
+    flex: 1 1 33%; /*definindo o flex grow e o flex shrink, a gente vai garantir que vai ter 3 div por linhas no nosso container*/
+}
+
+#block-1, #block-2, #block-3 { /*tirando a borda de cima*/
+    border-top: none;
+}
+
+#block-1, #block-4, #block-7 { /*tirando a borda da esquerda*/
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9 { /*tirando a borda debaixo*/
+    border-bottom: none;
+}
+
+#block-3, #block-6, #block-9 { /*tirando a borda da direita*/
+    border-right: none;
+}
+
+/* Símbolos */
+
+.x {
+    font-size: 65px; /*alterando a fonte do X*/
+    color: red; /*colocando a cor*/
+    display: inline-block; /*para conseguirmos mexer como se fosse um bloco que aceita elementos na mesma linha*/
+    line-height: 100px; /*para centralizar no bloco que tem 100px de altura, e é assim que centraliza uma fonte na vertical*/
+}
+
+.o {
+    width: 50px; /*largura*/
+    height: 50px; /*altura*/
+    border: 5px solid green; /*criando uma borda verde*/
+    border-radius: 50%; /*transformando em círculo*/
+    display: inline-block; /*colocando para aceitar elementos um do lado do outro*/
+    margin-top: 17px; /*vai garantir que ele fique centralizado no box*/
+}
+
+/* classe de esconder */
+
+.hide {
+    display: none !important;
+}
+
+/* placar */
+
+#scoreboard-container { 
+    font-weight: bold; /*fonte negrito*/
+    margin-top: 30px; /*para descolar do topo*/
+    font-size: 25px; /*alterando o tamanho da fonte*/
+    position: relative; /*para centralizarmos*/
+    margin-left: auto; /*auxilio para centralizar*/
+    margin-right: auto; /*auxílio para centralizar*/
+}
+
+.score-box {
+    margin: 0 20px; /*afastar o símbolo X do símbolo O*/
+}
+
+#x-scoreboard {
+    color: red;
+    margin-right: 3px; /*para descolar dos dois pontos*/
+}
+
+#o-scoreboard {
+    display: inline-block; /*para aceitar elementos do lado dele*/
+    width: 18px; /*largura*/
+    height: 18px; /*altura*/
+    border: 2px solid green; /*criando uma borda*/
+    border-radius: 50%; /*transformando em círculo*/
+    margin-right: 3px; /*para afastar do ponto um pouco*/
+}
+
+/* msg de vitória */
+
+#message p {
+    position: absolute; /*Assim centralizamos uma mensagem absoluta!*/
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; /*---------------*/
+    top: 150px; /*ela pertence à 150px do topo*/
+    width: 500px; /*largura*/
+    font-size: 50px; /*tamanho da fonte*/
+    background-color: #000; /*cor de fundo*/
+    color: #fff; /*cor da letra*/
+    padding: 20px; /*espaçamento de 20px*/
+ /*escondendo a mensagem por enquanto*/
+}
